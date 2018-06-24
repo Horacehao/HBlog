@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.hblog.dao.RecordInfoMapper" >
+  <resultMap id="BaseResultMap" type="com.hblog.domain.RecordInfo" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="title" property="title" jdbcType="VARCHAR" />
+    <result column="createTime" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="content" property="content" />
+  </resultMap>
+
+  <sql id="Base_Column_List" >
+    id, title, createTime, content
+  </sql>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from record_info
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <insert id="insert" parameterType="com.hblog.domain.RecordInfo" >
+    insert into record_info (id, title, createTime, content)
+    values (#{id,jdbcType=INTEGER}, #{title,jdbcType=VARCHAR}, #{createTime,jdbcType=TIMESTAMP}, 
+      #{content})
+  </insert>
+
+  <update id="updateByPrimaryKey" parameterType="com.hblog.domain.RecordInfo" >
+    update record_info
+    set title = #{title,jdbcType=VARCHAR},
+      createTime = #{createTime,jdbcType=TIMESTAMP},
+      content = #{content}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+
+  <select id="selectAll" resultType="com.hblog.domain.RecordInfo" >
+    select * from record_info order by id desc
+  </select>
+
+  <select id="selectById" parameterType="java.lang.Integer" resultType="com.hblog.domain.RecordInfo" >
+    select * from record_info where id = #{id, jdbcType=INTEGER}
+  </select>
+</mapper>

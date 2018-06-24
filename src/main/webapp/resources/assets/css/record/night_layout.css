@@ -1,0 +1,80 @@
+#record {
+  padding-top: 40px;
+  min-height: 600px;
+  background: #2F2D2D;
+  border-bottom: 1px solid #000;
+}
+#record .record-content {
+  width: 55%;
+  margin-left: 30%;
+}
+#record .record-content .record-title {
+  font-size: 24px;
+  height: 56px;
+  line-height: 56px;
+  padding-left: 60px;
+  font-weight: 600;
+  background: url("/resources/image/clock.png") no-repeat;
+  background-position-y: 3px;
+  background-size: 50px 50px;
+  color: #8A8888;
+}
+#record .record-content .main .year {
+  position: relative;
+}
+#record .record-content .main .year .time-line {
+  width: 2px;
+  position: absolute;
+  bottom: 0;
+  top: -5px;
+  background: #5495BA;
+  left: 24px;
+}
+#record .record-content .main .year .year-title {
+  width: 130px;
+  font-size: 24px;
+  color: #BD9662;
+  margin-left: -132px;
+}
+#record .record-content .main .year .year-title i {
+  margin-left: 10px;
+}
+#record .record-content .main .year .daily {
+  padding-bottom: 40px;
+}
+#record .record-content .main .year .daily .daily-title {
+  font-size: 19px;
+}
+#record .record-content .main .year .daily .daily-title .time {
+  float: left;
+  margin-left: -100px;
+  color: #A9B7C6;
+}
+#record .record-content .main .year .daily .daily-title .title {
+  float: left;
+  margin-left: 65px;
+  color: #63d029;
+}
+#record .record-content .main .year .daily .daily-content {
+  font-size: 14px;
+  color: #8A8888;
+  font-family: Microsoft Yahei, serif;
+  line-height: 24px;
+  margin: 15px 0 0 65px;
+  width: 530px;
+}
+#record .record-content .main .year .daily .daily-content p {
+  margin: 0;
+  padding: 0;
+}
+#record .record-content .main .year .daily .daily-content a {
+  color: #AAAAAA;
+  font-family: Consolas, serif;
+}
+#record .record-content .main .year .daily .daily-content img {
+  max-width: 100%;
+  margin-top: 10px;
+}
+#record .record-content .main .year .daily:first-child {
+  margin-top: 40px;
+}

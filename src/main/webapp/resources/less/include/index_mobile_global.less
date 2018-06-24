@@ -1,0 +1,149 @@
+html{
+  font-size: 12px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  font-size: 1.3rem;
+}
+
+.body-slide {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+
+.clear-fix {
+  clear: both;
+}
+
+#Wrapper {
+  width: 100%;
+  margin-left: 0;
+  overflow-x: hidden;
+
+  #Top{
+    width: 100%;
+    position: fixed;
+    padding: 0;
+    text-align: center;
+    font-family: "Open Sans",SimHei,"Noto Sans","Noto Sans CJK SC","Microsoft Yahei",sans-serif;
+    background: #FFF;
+    color: #88909a;
+    border-bottom: 1px solid #E3F2FD;
+    height: 3em;
+    line-height: 3em;
+    z-index: 999;
+
+    .top-list {
+      float: left;
+      margin-left: 1em;
+    }
+
+    .top-github {
+      float: right;
+      margin-right: 1em;
+    }
+
+    i {
+      font-size: 1.5rem;
+      line-height: 2.75em;
+    }
+
+    a {
+      color: #88909a;
+      text-decoration: none;
+    }
+  }
+
+  #Content {
+    margin-top: 3em;
+    padding: 0 1em 0 1em;
+  }
+
+  .content-slide {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+    .article:first-child {
+      margin-top: 1.5em;
+    }
+  }
+}
+
+
+#SlideBar{
+  position: fixed;
+  width: 76%;
+  bottom: 0;
+  top: 0;
+  right: 100%;
+  overflow: hidden;
+  color: #ebebeb;
+  font-family:"Consolas", "Microsoft Yahei", sans-serif;
+  //: url('/resources/image/mobile_slider_bar.jpg');
+  //-webkit-background-size: 24.3em;
+  //background-size: 24.3em;
+  background: #202020;
+  
+  .author_info{
+    margin-top: 1em;
+    text-align: center;
+
+    img {
+      width: 5em;
+    }
+
+    p {
+      line-height: .5;
+    }
+  }
+
+  .menu_bar {
+
+    ul {
+      font-size: 1.45rem;
+      margin-top: 1.3em;
+      padding: 0;
+      margin-left: 1.5em;
+      list-style: none;
+
+      li {
+        margin-top: .7em;
+
+        a {
+          text-decoration: none;
+          color: #999;
+        }
+
+        i {
+          margin-right: .8em;
+        }
+
+        .csdn{
+          background: url('/resources/image/csdn.png') no-repeat;
+          -webkit-background-size: 1em;
+          background-size: 1em;
+        }
+        .zhihu{
+          background: url('/resources/image/zhihu.png') no-repeat;
+          -webkit-background-size: 1em;
+          background-size: 1em;
+        }
+        span {
+          width: 1em;
+          height: 1.2em;
+          margin-right: .8em;
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

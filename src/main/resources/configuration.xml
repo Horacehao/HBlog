@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+
+<configuration>
+    <typeAliases>
+        <typeAlias type="com.hblog.domain.ArticleInfo" alias="ArticleInfo" />
+        <typeAlias type="com.hblog.domain.ArticleReadLog" alias="ArticleReadLog" />
+        <typeAlias type="com.hblog.domain.AuthorInfo" alias="AuthorInfo" />
+        <typeAlias type="com.hblog.domain.BookInfo" alias="BookInfo" />
+        <typeAlias type="com.hblog.domain.BookReadLog" alias="BookReadLog" />
+        <typeAlias type="com.hblog.domain.CategoryInfo" alias="CategoryInfo" />
+        <typeAlias type="com.hblog.domain.RecordInfo" alias="RecordInfo" />
+        <typeAlias type="com.hblog.domain.TagInfo" alias="TagInfo" />
+        <typeAlias type="com.hblog.domain.SlugInfo" alias="SlugInfo" />
+        <typeAlias type="com.hblog.domain.BookTable" alias="BookTable" />
+    </typeAliases>
+    
+    <plugins>
+        <plugin interceptor="com.hblog.web.interceptor.PaginationInterceptor" />
+    </plugins>
+</configuration>

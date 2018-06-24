@@ -1,0 +1,213 @@
+html {
+  font-size: 12px;
+}
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  overflow-x: hidden;
+  font-family: "Helvetica Neue", "Luxi Sans", "DejaVu Sans", Tahoma, "Hiragino Sans GB", "Microsoft Yahei", sans-serif;
+  font-size: 1.3rem;
+}
+.body-slide {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+}
+.clear-fix {
+  clear: both;
+}
+#Wrapper {
+  width: 100%;
+  margin-left: 0;
+  overflow-x: hidden;
+}
+#Wrapper #Top {
+  width: 100%;
+  position: fixed;
+  padding: 0;
+  text-align: center;
+  font-family: "Open Sans", SimHei, "Noto Sans", "Noto Sans CJK SC", "Microsoft Yahei", sans-serif;
+  background: #FFF;
+  color: #88909a;
+  border-bottom: 1px solid #E3F2FD;
+  height: 3em;
+  line-height: 3em;
+  z-index: 999;
+}
+#Wrapper #Top .top-list {
+  float: left;
+  margin-left: 1em;
+}
+#Wrapper #Top .top-github {
+  float: right;
+  margin-right: 1em;
+}
+#Wrapper #Top i {
+  font-size: 1.5rem;
+  line-height: 2.75em;
+}
+#Wrapper #Top a {
+  color: #88909a;
+  text-decoration: none;
+}
+#Wrapper #Content {
+  margin-top: 3em;
+  padding: 0 1em 0 1em;
+}
+#Wrapper .content-slide {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+}
+#Wrapper .content-slide .article:first-child {
+  margin-top: 1.5em;
+}
+#SlideBar {
+  position: fixed;
+  width: 76%;
+  bottom: 0;
+  top: 0;
+  right: 100%;
+  overflow: hidden;
+  color: #ebebeb;
+  font-family: "Consolas", "Microsoft Yahei", sans-serif;
+  background: #202020;
+}
+#SlideBar .author_info {
+  margin-top: 1em;
+  text-align: center;
+}
+#SlideBar .author_info img {
+  width: 5em;
+}
+#SlideBar .author_info p {
+  line-height: .5;
+}
+#SlideBar .menu_bar ul {
+  font-size: 1.45rem;
+  margin-top: 1.3em;
+  padding: 0;
+  margin-left: 1.5em;
+  list-style: none;
+}
+#SlideBar .menu_bar ul li {
+  margin-top: .7em;
+}
+#SlideBar .menu_bar ul li a {
+  text-decoration: none;
+  color: #999;
+}
+#SlideBar .menu_bar ul li i {
+  margin-right: .8em;
+}
+#SlideBar .menu_bar ul li .csdn {
+  background: url('/resources/image/csdn.png') no-repeat;
+  -webkit-background-size: 1em;
+  background-size: 1em;
+}
+#SlideBar .menu_bar ul li .zhihu {
+  background: url('/resources/image/zhihu.png') no-repeat;
+  -webkit-background-size: 1em;
+  background-size: 1em;
+}
+#SlideBar .menu_bar ul li span {
+  width: 1em;
+  height: 1.2em;
+  margin-right: .8em;
+  display: inline-block;
+  vertical-align: middle;
+}
+body {
+  background: #F8F9F9!important;
+}
+#Content {
+  padding: 0!important;
+  margin-top: 3.5em!important;
+}
+.read-header {
+  width: 100%;
+  margin: 0;
+  padding: 0.5em 0;
+  background: #FFF;
+  color: #535353;
+  text-align: center;
+  border-top: 1px solid #E7F3FD;
+}
+.read-header i {
+  margin-right: 0.3em;
+}
+.read-header span {
+  color: #F7443D;
+}
+.read-title {
+  font-size: 1.2rem;
+  width: 100%;
+  background: #F3F3F3;
+  color: #ACABB0;
+  padding: 0.4em 0 0.4em 1em;
+  border-bottom: 1px solid #E4E3E6;
+}
+.books-list .book {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ddd;
+}
+.books-list .book .cover {
+  width: 90px;
+  float: left;
+  margin-left: 16px;
+  margin-top: 15px;
+}
+.books-list .book .cover img {
+  width: 90px;
+}
+.books-list .book .info {
+  float: left;
+  width: calc(100% - 126px);
+  margin-left: 10px;
+  margin-top: 15px;
+  padding-right: 10px;
+}
+.books-list .book .info .title {
+  font-size: 1.2rem;
+  margin: 0;
+}
+.books-list .book .info .title a {
+  color: #333;
+  text-decoration: none;
+}
+.books-list .book .info .detail {
+  font-size: 0.94rem;
+  color: #676767;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.books-list .book .info .detail a {
+  text-decoration: none;
+}
+.books-list .book .info .detail a:after {
+  content: ' \ ';
+  margin-right: 8px;
+}
+.books-list .book .info .intro {
+  color: #a6a6a6;
+  font-size: 1rem;
+  line-height: 1.7;
+}
+.books-list .book .info .actions {
+  margin-top: 15px;
+}
+.books-list .book .info .actions a {
+  background: #77A4B3;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.15rem;
+  padding: 5px 15px;
+  border-radius: 3px;
+  display: inline-block;
+}
+.books-list .book .info .actions span {
+  font-size: 1.05rem;
+  color: #a6a6a6;
+}

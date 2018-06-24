@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.hblog.dao.PicInfoMapper">
+
+  <resultMap id="BaseResultMap" type="com.hblog.domain.PicInfo">
+    <id column="id" jdbcType="BIGINT" property="id" />
+    <result column="relativePath" jdbcType="VARCHAR" property="relativePath" />
+    <result column="physicalPath" jdbcType="VARCHAR" property="physicalPath" />
+    <result column="createTime" jdbcType="DATE" property="createTime" />
+  </resultMap>
+
+  <sql id="Base_Column_List">
+    id, relativePath, physicalPath, createTime
+  </sql>
+
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from pic_info
+    where id = #{id,jdbcType=BIGINT}
+  </delete>
+  <insert id="insert" parameterType="com.hblog.domain.PicInfo">
+    insert into pic_info (id, relativePath, physicalPath, 
+      createTime)
+    values (#{id,jdbcType=BIGINT}, #{relativePath,jdbcType=VARCHAR}, #{physicalPath,jdbcType=VARCHAR}, 
+      #{createTime,jdbcType=DATE})
+  </insert>
+
+  <select id="selectAll" resultType="com.hblog.domain.PicInfo" >
+    select
+    <include refid="Base_Column_List" />
+    from pic_info
+    order by id desc
+  </select>
+
+  <select id="selectById" resultType="com.hblog.domain.PicInfo" >
+    select
+    <include refid="Base_Column_List" />
+    from pic_info
+    where id = #{id, jdbcType=BIGINT}
+  </select>
+
+</mapper>

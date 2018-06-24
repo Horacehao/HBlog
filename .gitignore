@@ -1,0 +1,12 @@
+.classpath
+.project
+/.metadata
+/.settings
+/build
+/bin
+/dist
+/.idea
+/HBlog.iml
+/target
+/properties
+/node_modules
